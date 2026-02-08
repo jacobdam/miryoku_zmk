@@ -8,4 +8,4 @@ jobs:
       board: '["nice_nano"]'
       shield: '["corne_left","corne_right","settings_reset"]'
       alphas: '["QWERTY"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=\"Phuc corne\""]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=Phuc-corne"]'
