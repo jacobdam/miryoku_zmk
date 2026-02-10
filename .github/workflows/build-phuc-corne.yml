@@ -8,7 +8,7 @@ jobs:
       board: '["nice_nano"]'
       shield: '["corne_left","corne_right"]'
       alphas: '["QWERTY"]'
-      nav: '["invertedT"]'
+      nav: '["vi"]'
       clipboard: '["win"]'
       kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y"]'
   settings_reset:
