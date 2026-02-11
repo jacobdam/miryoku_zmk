@@ -10,7 +10,7 @@ jobs:
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       clipboard: '["win"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y"]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=\\\"phuc-corne\\\""]'
   settings_reset:
     uses: ./.github/workflows/main.yml
     secrets: inherit
