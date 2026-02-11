@@ -1,0 +1,15 @@
+description: Clipboard action that sends mac or win keycode based on global toggle state
+
+compatible: "zmk,behavior-clipboard-action"
+
+include: zero_param.yaml
+
+properties:
+  mac-keycode:
+    type: int
+    required: true
+    description: "Encoded keycode to send in Mac mode (e.g. LG(C))"
+  win-keycode:
+    type: int
+    required: true
+    description: "Encoded keycode to send in Win mode (e.g. LC(C))"

@@ -21,6 +21,12 @@
   #define U_CPY &kp LC(C)
   #define U_CUT &kp LC(X)
   #define U_UND &kp LC(Z)
+#elif defined (MIRYOKU_CLIPBOARD_TOGGLE)
+  #define U_RDO &cb_redo
+  #define U_PST &cb_paste
+  #define U_CPY &cb_copy
+  #define U_CUT &cb_cut
+  #define U_UND &cb_undo
 #else
   #define U_RDO &kp K_AGAIN
   #define U_PST &kp LS(INS)

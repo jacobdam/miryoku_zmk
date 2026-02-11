@@ -1,0 +1,5 @@
+description: Toggle between Mac and Win clipboard modes
+
+compatible: "zmk,behavior-clipboard-toggle"
+
+include: zero_param.yaml

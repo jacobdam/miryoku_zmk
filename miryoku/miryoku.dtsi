@@ -49,3 +49,8 @@ MIRYOKU_LAYER_LIST
 #else
   #include "miryoku_behaviors.dtsi"
 #endif
+
+#if defined (MIRYOKU_CLIPBOARD_TOGGLE)
+  #include <clipboard.dtsi>
+  #include "miryoku_clipboard_toggle_combo.dtsi"
+#endif
