@@ -12,4 +12,6 @@ config ZMK_BEHAVIOR_CLIPBOARD_TOGGLE
 config ZMK_WIDGET_CLIPBOARD_STATUS
     bool "Clipboard mode status widget"
     depends on ZMK_DISPLAY
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
     default y if ZMK_DISPLAY
+    select LV_USE_LABEL
