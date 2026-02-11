@@ -1,0 +1,42 @@
+// SPDX-License-Identifier: MIT
+
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        /omit-if-no-ref/ cb_copy: cb_copy {
+            compatible = "zmk,behavior-clipboard-action";
+            #binding-cells = <0>;
+            mac-keycode = <LG(C)>;
+            win-keycode = <LC(C)>;
+        };
+        /omit-if-no-ref/ cb_paste: cb_paste {
+            compatible = "zmk,behavior-clipboard-action";
+            #binding-cells = <0>;
+            mac-keycode = <LG(V)>;
+            win-keycode = <LC(V)>;
+        };
+        /omit-if-no-ref/ cb_cut: cb_cut {
+            compatible = "zmk,behavior-clipboard-action";
+            #binding-cells = <0>;
+            mac-keycode = <LG(X)>;
+            win-keycode = <LC(X)>;
+        };
+        /omit-if-no-ref/ cb_undo: cb_undo {
+            compatible = "zmk,behavior-clipboard-action";
+            #binding-cells = <0>;
+            mac-keycode = <LG(Z)>;
+            win-keycode = <LC(Z)>;
+        };
+        /omit-if-no-ref/ cb_redo: cb_redo {
+            compatible = "zmk,behavior-clipboard-action";
+            #binding-cells = <0>;
+            mac-keycode = <LS(LG(Z))>;
+            win-keycode = <LC(Y)>;
+        };
+        /omit-if-no-ref/ cb_toggle: cb_toggle {
+            compatible = "zmk,behavior-clipboard-toggle";
+            #binding-cells = <0>;
+        };
+    };
+};

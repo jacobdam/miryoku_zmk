@@ -287,6 +287,17 @@ jobs:
               fi
             fi
           done
+          for local_module in ${GITHUB_WORKSPACE}/miryoku_zmk/zmk-modules/*/
+          do
+            if [ -d "$local_module" ] && [ -f "${local_module}zephyr/module.yml" ]; then
+              if [ -z "$module_dirs" ]
+              then
+                module_dirs="${local_module};"
+              else
+                module_dirs="${module_dirs}${local_module};"
+              fi
+            fi
+          done
           if [ -n "$module_dirs" ]
           then
             modules_arg="-DZMK_EXTRA_MODULES=\"$module_dirs\""

@@ -9,8 +9,8 @@ jobs:
       shield: '["corne_left","corne_right"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
-      clipboard: '["win"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=\\\"phuc-corne\\\""]'
+      clipboard: '["toggle"]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN=n\nCONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM=y\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=\\\"phuc-corne\\\""]'
   settings_reset:
     uses: ./.github/workflows/main.yml
     secrets: inherit
